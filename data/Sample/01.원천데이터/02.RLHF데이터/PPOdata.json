@@ -1,0 +1,38 @@
+{
+  "dataset_info": {
+    "dataset_type": "PPO",
+    "last_updated": "240105"
+  },
+  "data_info": [
+    {
+      "data_id": "9ebbd09c-3d6b-4cae-8ab2-43a9da725f41",
+      "data_category": {
+        "main": "구어체",
+        "middle": "산업"
+      },
+      "question_type": "생성",
+      "question_count": 10,
+      "question": "생수 구매 시 높은 가격이 항상 높은 품질을 의미하는 건가요?"
+    },
+    {
+      "data_id": "ba34d798-d930-4bdc-a285-12a75b20ed5f",
+      "data_category": {
+        "main": "구어체",
+        "middle": "공학"
+      },
+      "question_type": "생성",
+      "question_count": 7,
+      "question": "더블 포트 라인이 무엇이고 어떤 상황에서 사용되나요?"
+    },
+    {
+      "data_id": "4fcc34c9-331d-420d-9a08-b44338627628",
+      "data_category": {
+        "main": "구어체",
+        "middle": "기타"
+      },
+      "question_type": "생성",
+      "question_count": 8,
+      "question": "사람들이 쿠팡에서 산 물건 중에 뭐가 제일 만족스러워?"
+    }
+  ]
+}

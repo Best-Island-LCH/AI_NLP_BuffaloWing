@@ -1,0 +1,38 @@
+{
+  "dataset_info": {
+    "dataset_type": "SFT",
+    "last_updated": "231108"
+  },
+  "data_info": [
+    {
+      "data_id": "710284a7-83c6-4647-a790-2ffb958eb8c2",
+      "data_category": {
+        "main": "구어체",
+        "middle": "공학"
+      },
+      "question_type": "생성",
+      "question_count": 8,
+      "question": "항구 및 부두 시설과 배의 관계는 어떻게 되는가?"
+    },
+    {
+      "data_id": "8f2868df-67a9-47f6-b262-a3b6beb041fd",
+      "data_category": {
+        "main": "문어체",
+        "middle": "보건"
+      },
+      "question_type": "생성",
+      "question_count": 5,
+      "question": "자동차 배기가스의 위험은 무엇인가?"
+    },
+    {
+      "data_id": "691aec5b-d34f-4be5-b2bf-c68fa8428009",
+      "data_category": {
+        "main": "문어체",
+        "middle": "보건"
+      },
+      "question_type": "생성",
+      "question_count": 13,
+      "question": "동물성 식품을 먹을 때 고려해야 할 동물 복지 관련 문제는 어떤 것이 있나요?"
+    }
+  ]
+}
