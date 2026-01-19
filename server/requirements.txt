@@ -1,0 +1,4 @@
+fastapi==0.115.6
+uvicorn[standard]==0.30.6
+pyngrok==7.2.0
+python-dotenv==1.0.1
