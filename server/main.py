@@ -9,7 +9,7 @@ from pydantic import BaseModel, Field
 
 from server.pipeline_adapter import PipelineAdapter
 
-load_dotenv()
+load_dotenv("../.env")
 
 APP_HOST = os.getenv("HOST", "0.0.0.0")
 APP_PORT = int(os.getenv("PORT", "8000"))

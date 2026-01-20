@@ -2,10 +2,23 @@
 
 ## Server
 
+Cloning:
+```bash
+git clone https://github.com/Best-Island-LCH/AI_NLP_BuffaloWing.git
+cd AI_NLP_BuffaloWing
+git checkout feat/server
+```
+
 Install dependencies:
 
 ```bash
 pip install -r server/requirements.txt
+```
+
+NGROK shutdown
+```bash
+ps aux | grep ngrok
+kill -9 <PID>
 ```
 
 Optional environment setup:
