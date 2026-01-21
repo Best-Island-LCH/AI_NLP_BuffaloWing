@@ -6,7 +6,7 @@ const starter = [
   {
     role: "assistant",
     content:
-      "Ready when you are. Ask anything, and I will route it through the pipeline.",
+      "안녕하세요. Kanana 8B RLHF 모델로 답변합니다. 무엇이든 물어보세요.",
   },
 ];
 
@@ -57,7 +57,7 @@ export default function App() {
         ...prev,
         {
           role: "assistant",
-          content: "Sorry, I could not reach the server. Check the API base.",
+          content: "서버에 연결할 수 없습니다. API 주소를 확인해 주세요.",
         },
       ]);
     } finally {
@@ -79,9 +79,9 @@ export default function App() {
   };
 
   const status = useMemo(() => {
-    if (loading) return "Streaming...";
-    if (error) return "Disconnected";
-    return "Online";
+    if (loading) return "응답 생성 중";
+    if (error) return "연결 끊김";
+    return "온라인";
   }, [loading, error]);
 
   return (
@@ -89,18 +89,18 @@ export default function App() {
       <div className="backdrop" />
       <header className="topbar">
         <div>
-          <p className="eyebrow">LLM Orchestrator</p>
-          <h1>Chatbot Control Room</h1>
+          <p className="eyebrow">Likelion 실전 프로젝트 2</p>
+          <h1>QA 챗봇 운영 대시보드</h1>
           <p className="subhead">
-            Connects your FastAPI gateway to the pipeline in real time.
+            Kanana 8B RLHF 기반 응답 품질을 실시간으로 확인합니다.
           </p>
         </div>
         <div className="status-card">
-          <p className="status-label">Session</p>
+          <p className="status-label">세션</p>
           <p className="status-value">{status}</p>
-          <p className="status-meta">Messages: {messageCount}</p>
+          <p className="status-meta">메시지: {messageCount}</p>
           {latency !== null && (
-            <p className="status-meta">Latency: {latency.toFixed(0)} ms</p>
+            <p className="status-meta">지연: {latency.toFixed(0)} ms</p>
           )}
         </div>
       </header>
@@ -108,11 +108,11 @@ export default function App() {
       <main className="chat-shell">
         <div className="chat-header">
           <div>
-            <h2>Conversation</h2>
+            <h2>대화</h2>
             <p>API base: {API_BASE}</p>
           </div>
           <button className="ghost" onClick={resetChat} type="button">
-            Reset
+            초기화
           </button>
         </div>
 
@@ -130,7 +130,7 @@ export default function App() {
             <div className="bubble assistant">
               <span className="role">assistant</span>
               <p className="typing">
-                Thinking<span>.</span>
+                생각 중<span>.</span>
                 <span>.</span>
                 <span>.</span>
               </p>
@@ -140,7 +140,7 @@ export default function App() {
 
         <section className="composer">
           <textarea
-            placeholder="Write a message. Press Enter to send, Shift+Enter for a new line."
+            placeholder="메시지를 입력하세요. Enter로 전송, Shift+Enter로 줄바꿈."
             value={input}
             onChange={(event) => setInput(event.target.value)}
             onKeyDown={handleKeyDown}
@@ -148,7 +148,7 @@ export default function App() {
           <div className="composer-actions">
             {error && <span className="error">{error}</span>}
             <button className="primary" onClick={sendMessage} disabled={!canSend}>
-              {loading ? "Sending..." : "Send"}
+              {loading ? "전송 중..." : "전송"}
             </button>
           </div>
         </section>
