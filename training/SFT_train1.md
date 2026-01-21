@@ -134,4 +134,6 @@ training_args = TrainingArguments(
     - 학습 로그를 Weights & Biases(wandb)와 같은 외부 대시보드에 전송하지 않고 로컬 환경에서만 확인하도록 설정.
 
 # 실험 결과
-
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
