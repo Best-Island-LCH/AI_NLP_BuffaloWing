@@ -137,3 +137,5 @@ training_args = TrainingArguments(
 ![alt text](image.png)
 ![alt text](image-1.png)
 ![alt text](image-2.png)
+
+- **해석: '다양한 도메인 지식 주입이 챗봇의 전반적인 답변 품질과 형식을 개선한다.'는 가설이 입증됨.**
