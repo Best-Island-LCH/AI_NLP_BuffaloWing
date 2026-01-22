@@ -1,5 +1,9 @@
 # 멋사 QA 챗봇 (AI_NLP_BuffaloWing)
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/544a3643-8c6d-4b0e-8ded-6dc7a2d0fc82" alt="LikeLion_실전프로젝트02__시연영상_압축본">
+</p>
+
 실전 프로젝트 2에서 구축한 **QA 챗봇 + 평가 파이프라인**입니다.  
 FastAPI로 모델을 서빙하고, React 프론트에서 채팅하며, RLHF 평가 노트북으로 품질을 분석합니다.
 
