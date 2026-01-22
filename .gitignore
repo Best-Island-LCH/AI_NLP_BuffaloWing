@@ -1,3 +1,20 @@
 # .gitignore
 train/*.json
 AI_NLP_BuffaloWing/
+
+# 환경변수
+.env
+
+# 캐시
+__pycache__/
+node_modules/
+package-lock.json
+package.json
+
+# Large Files
+LikeLion_실전프로젝트02__시연영상_원본.mp4
+LikeLion_실전프로젝트02__시연영상_압축본.gif
+LikeLion_실전프로젝트02__시연영상_압축본.mp4
+LikeLion_실전프로젝트02_발표자료_초안.pdf
+LikeLion_실전프로젝트02_발표자료_두번째안.pdf
+버8로윙_실전프로젝트_02_전진혁.zip
